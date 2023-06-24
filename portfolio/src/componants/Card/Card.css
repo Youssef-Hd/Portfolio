@@ -1,0 +1,224 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.app :hover{
+  
+}
+
+  .appopen {
+    display: flex;
+    padding-top: 30px;
+    height: fit-content;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  
+  .card {
+    background: #222222;
+    padding: 3rem 2rem;
+    height: fit-content;
+  }
+  
+  .photo__img {
+    max-width: 250px;
+    height: auto;
+    text-align: center;
+    border-radius: 150px;
+  }
+  .img-divv {
+    max-width: 250px;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  .div__card--title-h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: orange;
+    font-size: 3rem;
+  }
+  
+  .div__card--closed {
+    display: flex;
+  }
+  
+  .div__card--closed-h3 {
+    height: auto;
+    min-width: 250px;
+    text-align: center;
+    color: orange;
+  }
+  
+  .div__card--closed-p {
+    width: 500px;
+    color: white;
+    text-align: end;
+  }
+  
+  .div__card--closed-h3-about {
+    text-align: center;
+    width: 500px;
+    color: orange;
+  }
+  .div__card--open-h3-about {
+    text-align: center;
+    color: orange;
+  }
+  
+  .div__card--open-div {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 100%; */
+    width: 1500px;
+  }
+  
+  .div__card--closed-h4-p-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 37vh;
+  }
+  
+  .div__open-p {
+    text-align: center;
+    /* width: 1500px; */
+    display: flex;
+    align-self: center;
+    max-width: 800px;
+  }
+  
+  .div__card--closed-ellipse {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ww {
+    width: auto;
+    align-self: flex-end;
+  }
+  
+  .h1-none {
+    display: none;
+  }
+  
+  .label__phone {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .div__card--closed-email {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ss {
+    color: rgb(227, 137, 57);
+    letter-spacing: 20rem;
+  }
+  
+  .label__phone-div {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .div__card-open {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../src/assets/Ellipse1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .card__open-img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    max-width: 300px;
+    border-radius: 150px;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper .static-txt {
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li {
+    list-style: none;
+    color: orange;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100% {
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    border-left: 2px solid orange;
+    background: #222222;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%,
+    60% {
+      left: calc(100% + 30px);
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
+  
+  
+  
+  /* Projects css */
+  .div__open-h2-projects{
+    text-align: center;
+    
+  }
+  
+  .div__open-h2-div{
+    background-color: orange;
+    border-radius: 12px;
+    width: 80%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;  
+  }

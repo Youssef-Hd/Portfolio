@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, spring } from "framer-motion";
-import "./Card.css"
-import usef from "../../../src/assets/Usef.png"
-import Ellipse from "../../../src/assets/Ellipse 5.png"
+import "./Card.css";
+import usef from "../../../src/assets/Usef.png";
+import Ellipse from "../../../src/assets/Ellipse 5.png";
 import { SiMinutemailer } from "react-icons/si";
 import { FcIphone } from "react-icons/fc";
 
@@ -11,7 +11,7 @@ const Card = () => {
 
   return (
     <>
-      <div className={toggle ? "appopen" : "app"}>
+      <motion.div className={toggle ? "appopen" : "app"}>
         <motion.div
           transition={{ layout: { duration: 1, type: spring } }}
           layout
@@ -68,10 +68,11 @@ const Card = () => {
                     />
                     Youssefhamadi94@gmail.com
                   </div>
+            </div>
                 </div>
               </div>
-            </div>
           </motion.div>
+          
           {toggle && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -79,7 +80,6 @@ const Card = () => {
               transition={{ duration: 0.2 }}
               exit={{ opacity: 0 }}
               className="div__card-open"
-              
             >
               <motion.div layout className="wrapper">
                 <div className="static-txt">I'm</div>
@@ -118,15 +118,15 @@ const Card = () => {
                   est iure commodi cum numquam!
                 </motion.p>
               </div>
-                <motion.div className="div__open-h2-div">
-                  <motion.h2 className="div__open-h2-projects">
-                    Projects
-                  </motion.h2>
-                </motion.div>
+              <motion.div className="div__open-h2-div">
+                <motion.h2 className="div__open-h2-projects">
+                  Projects
+                </motion.h2>
+              </motion.div>
             </motion.div>
           )}
         </motion.div>
-      </div>
+      </motion.div>
     </>
   );
 };

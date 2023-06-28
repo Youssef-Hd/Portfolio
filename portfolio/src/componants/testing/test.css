@@ -1,0 +1,76 @@
+/* .bb {
+  background-color: rebeccapurple;
+} */
+
+
+/* .projects__div {
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  /* background-color: white; */
+/* }  */
+
+/* .angels__projects {
+  border: 0px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  color: black;
+  background-color: white;
+} */
+
+/* .stepup__projects {
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+} */
+/* 
+.stepup__projects :hover {
+  cursor: pointer;
+}
+
+.img__projects {
+  height: 174px;
+  width: 200px;
+  align-self: center;
+  padding: 5px;
+  margin: 0.1rem;
+} */
+
+/* .label__projects {
+  font-weight: bolder;
+  font-size: larger;
+} */
+
+/* .p__projects {
+  width: 250px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  font-weight: 450;
+  margin-top: 0.5rem;
+} */
+
+/* .back__card {
+  color: black;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-top: 2rem;
+} */
+
+/* .img__back-card {
+  width: 264px;
+  height: 480px;
+  border-radius: 8px;
+} */

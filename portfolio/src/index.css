@@ -2,20 +2,19 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  /* color-scheme: light dark; */
   color: rgb(255, 255, 255);
-  /* background-color: #da080857; */
-  /* background-color: #747bff; */
-  /* background: linear-gradient(to bottom, #213547, #FFFFFF); */
+  --primary: #222222;
+  --secondary: orange;
+  --paragraph: white;
+  --title: pink;
+  --icon: rgb(227, 137, 57);
 
 
-
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
 }
 
 a {
@@ -31,21 +30,15 @@ a:hover {
   margin: 0;
   display: flex;
   /* place-items: center; */
-  /* min-width: 320px;
+/* min-width: 320px;
   min-height: 100vh;
 }  */
 
-*{
+* {
   margin: 0;
-  padding: 0 ;
+  padding: 0;
   box-sizing: border-box;
 }
-body {
-  /* background: #1E1E1E; */
-  /* background: linear-gradient(130deg, #100c09 -30.29%, #222222 72.71%); */
-
-}
-
 
 h1 {
   font-size: 3.2em;

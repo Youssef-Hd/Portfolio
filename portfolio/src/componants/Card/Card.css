@@ -1,15 +1,60 @@
+.blob-title {
+  /* display: flex;
+  align-items: center;
+  align-self: center; */
+  width: 2000px;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  /* z-index: 10000; */
+  /* background-color: wheat; */
 }
 
-.app :hover {
-  cursor: pointer;
-  /* transform: scale3d(1.1, 1.1, 1); */
+#my__card-open {
+  /* box-shadow: 10px 10px 25px black; */
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  /* background-color: #330033; */
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); */
+  /* background-color: white; */
+  height: 300vh;
+  /* transition: 0.6s all ease; */
+  z-index: 0;
+}
 
+#my__card {
+  /* animation: mymove 1s infinite ease-in-out; */
+  /* box-shadow: 1px 1px 30px white; */
+  transition: 0.8s all;
+  z-index: 0;
+  background: none;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png")
+    repeat;
+  background-size: 1000px 1000px;
+  /* position: relative; */
+}
+
+#my__card:hover {
+  scale: 1.1;
+  transition: 0.6 all ease;
+  z-index: 10;
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat; /* box-shadow: 1px 1px 30px white; */
+  /* animation: mymove 1s infinite ease-in-out; */
+  /* first :  direction of the animation
+       second:
+       last: for how dence the light is
+        */
+}
+@keyframes mymove {
+  50% {
+    box-shadow: 1px 1px 30px black;
+  }
 }
 
 .appopen {
@@ -18,6 +63,9 @@
   height: fit-content;
   justify-content: center;
   padding-bottom: 30px;
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  z-index: 35000;
 }
 
 .card {
@@ -25,17 +73,29 @@
   padding: 3rem 2rem;
   height: fit-content;
   transform: none;
+  /* z-index: 100000; */
 }
 
+.card:hover {
+  cursor: pointer;
+}
+
+.img-divv {
+  max-width: 250px;
+  transform: none;
+}
+.div__card--closed-h4-p-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 37vh;
+  transform: none;
+}
 .photo__img {
   max-width: 250px;
   height: auto;
   text-align: center;
   border-radius: 150px;
-  transform: none;
-}
-.img-divv {
-  max-width: 250px;
   transform: none;
 }
 
@@ -47,7 +107,7 @@
 .div__card--title-h1 {
   text-align: center;
   padding-bottom: 2rem;
-  color: var(--secondary);
+  color: var(--title);
   font-size: 3rem;
   transform: none;
 }
@@ -61,13 +121,13 @@
   height: auto;
   min-width: 250px;
   text-align: center;
-  color: var(--secondary);
+  color: var(--title);
   transform: none;
 }
 
 .div__card--closed-p {
   width: 500px;
-  color: var(paragraph);
+  color: var(--paragraph);
   text-align: end;
   transform: none;
 }
@@ -78,43 +138,34 @@
   color: var(--title);
   transform: none;
 }
-.div__card--open-h3-about {
+.div__card--open-h2-about {
   text-align: center;
   color: var(--title);
+  font-size: 30px;
 }
 
 .div__card--open-div {
-  height: 30vh;
+  width: 1500px;
+  height: 40vh;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* width: 100%; */
-  width: 1500px;
-  transform: none;
-}
-
-.div__card--closed-h4-p-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 37vh;
-  transform: none;
+  /* background-color: rebeccapurple; */
 }
 
 .div__open-p {
-  text-align: center;
-  /* width: 1500px; */
   display: flex;
+  color: var(--paragraph);
+  font-size: 20px;
+  width: 1300px;
   align-self: center;
-  max-width: 800px;
-  transform: none;
 }
 
 .div__card--closed-ellipse {
   width: auto;
   display: flex;
   transform: none;
-
   flex-direction: column;
 }
 
@@ -142,7 +193,13 @@
 }
 
 .ss {
-  color: var(--icon);
+  color: linear-gradient(
+    132deg,
+    rgba(255, 165, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(255, 165, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
   letter-spacing: 20rem;
 }
 
@@ -155,16 +212,18 @@
 .div__card-open {
   display: flex;
   flex-direction: column;
-  background-image: url("../src/assets/Ellipse1.png");
+  background-image: url("../../assets/blackEllipse.png");
   background-repeat: no-repeat;
   background-size: contain;
+
+  /* height: 200vh; */
 }
 
 .card__open-img {
   display: flex;
   justify-content: center;
   align-self: center;
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 150px;
 }
 
@@ -175,6 +234,7 @@
 .wrapper .static-txt {
   font-size: 60px;
   font-weight: 400;
+  color: white;
 }
 .wrapper .dynamic-txts {
   margin-left: 15px;
@@ -208,7 +268,11 @@
   height: 120%;
   width: 100%;
   border-left: 2px solid orange;
-  background: #222222;
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  /* background-color: #330033;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); */
+  /* background: white; */
   animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
@@ -227,7 +291,26 @@
 }
 
 .div__open-h2-div {
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
+  background: linear-gradient(
+    30deg,
+    rgba(0, 0, 0, 1) 2%,
+    rgba(255, 165, 0, 1) 8%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(255, 165, 0, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* background: linear-gradient(
+    30deg,
+    rgba(0, 0, 0, 1) 2%,
+    white 8%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 1) 60%,
+    white 70%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
   border-radius: 12px;
   width: 80%;
   display: flex;
@@ -236,4 +319,152 @@
   justify-content: center;
   align-self: center;
   color: var(--title);
+}
+
+.card__z-index :hover {
+  cursor: pointer;
+}
+
+.blob__card-div {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  z-index: 2;
+}
+
+.blob-string-div {
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.string-color {
+  height: 1vh;
+  width: 1000px;
+  background-color: black;
+  align-self: center;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  left: 300px;
+}
+
+.blob__card-div-skills {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.stars {
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+}
+
+.twinkling {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+
+  -moz-animation: move-background 70s linear infinite;
+  -ms-animation: move-background 70s linear infinite;
+  -o-animation: move-background 70s linear infinite;
+  -webkit-animation: move-background 70s linear infinite;
+  animation: move-background 70s linear infinite;
+}
+
+#cloudz-index {
+  z-index: 10;
+  /* width: 100%; */
+}
+
+.clouds {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
+}
+
+.img-moon {
+  height: 70vh;
+  width: 70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+}
+
+.skills_div-content {
+  /* width: 100%; */
+  background: white;
+  height: 50vh;
+  color: black;
 }

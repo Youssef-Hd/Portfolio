@@ -1,21 +1,12 @@
-import { useState } from "react";
-import ReactCardFlip from "react-card-flip";
-import "./test.css";
-import logoabout from "../../assets/logoAbout.png";
-import Aplogo from "../../assets/Aplogo.png";
-import angelsgif from '../../assets/angelsprotectorsgif.gif'
+import './test.css'
+
+import React from 'react'
 
 const test = () => {
-  const [isFlipped, setIsflipped] = useState(false);
-
-  const handleClick = () => {
-    setIsflipped(!isFlipped);
-  };
-
   return (
-    <div>
-    </div>
-  );
-};
+    <div className='clickable-component'><button className='background-animation'>CLick</button></div>
+  )
+}
 
-export default test;
+
+export default test

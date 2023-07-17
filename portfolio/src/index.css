@@ -8,6 +8,7 @@
   --paragraph: white;
   --title: orange;
   --icon: rgb(227, 137, 57);
+  --background_container: none;
 }
 
 a {

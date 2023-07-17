@@ -3,10 +3,31 @@ import { motion, spring } from "framer-motion";
 import "./Card.css";
 import usef from "../../../src/assets/Usef.png";
 import Ellipse from "../../../src/assets/Ellipse 5.png";
-import { SiMinutemailer } from "react-icons/si";
+import footer from "../../../src/assets/Footer.png";
+import { SiMinutemailer, SiMiro, SiMongoose, SiMysql } from "react-icons/si";
 import { FcIphone } from "react-icons/fc";
-// import Projects from "../Projects/Projects";
 import Projects from "../Projects/Projects.tsx";
+import { DiJavascript1, DiSqllite } from "react-icons/di";
+import { AiFillHtml5, AiFillApi } from "react-icons/ai";
+import { FaLaravel } from "react-icons/fa";
+import { TbBrandVscode } from "react-icons/tb";
+import { CgFigma } from "react-icons/cg";
+import agile from "../../assets/kisspng-agile-software-development-scrum-computer-icons-ag-5afc42d617c5b6.9834140115264816220974.png";
+import express from "../../assets/expressjs.svg";
+import {
+  BiLogoNodejs,
+  BiLogoReact,
+  BiLogoMongodb,
+  BiLogoRedux,
+} from "react-icons/bi";
+import {
+  BsGit,
+  BsTrello,
+  BsFiletypePhp,
+  BsFillBootstrapFill,
+  BsFiletypeCss,
+  BsGithub,
+} from "react-icons/bs";
 
 const Card = () => {
   const [toggle, setToggle] = useState(false);
@@ -275,14 +296,158 @@ const Card = () => {
                   </text>
                 </svg>
               </div>
+              <div className="headers_skills-div">
+                <h2 className="h2_skills">Frontend</h2>
+                <h2 className="h2_skills">Backend</h2>
+                <h2 className="h2_skills">Others</h2>
+              </div>
               <div className="skills_div-content">
-                <h2>
-                  Languages
-                </h2>
-                <ul>
-                  <li></li>
-                </ul>
-
+                <div className="containers_div">
+                  <div className="frontend_div">
+                    <ul>
+                      <li>
+                        <div className="react-icons-div">
+                          <AiFillHtml5 />
+                          <span className="color-skills"> HTML</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <BsFiletypeCss />{" "}
+                          <span className="color-skills"> CSS</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <DiJavascript1 />
+                          <span className="color-skills"> JavaScript</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <BiLogoReact />
+                          <span className="color-skills"> React</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <BiLogoRedux />
+                          <span className="color-skills">Redux </span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <BsFillBootstrapFill />{" "}
+                          <span className="color-skills"> Bootstrap</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="backend_div">
+                    <ul className="ul_skills-width">
+                      <li>
+                        <div className="react-icons-div">
+                          <BiLogoNodejs />
+                          <span className="color-skills">NodeJS</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <img
+                            src={express}
+                            alt="yellow"
+                            className="react-icons-div img-agile"
+                          />
+                          <span className="color-skills">Expressjs</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <BiLogoMongodb />
+                          <span className="color-skills"> MongoDB</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <SiMongoose />
+                          <span className="color-skills"> Mongoose</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <BsFiletypePhp />
+                          <span className="color-skills"> PHP</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <FaLaravel />
+                          <span className="color-skills"> Laravel</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <SiMysql />
+                          <span className="color-skills">MySQL</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <AiFillApi />{" "}
+                          <span className="color-skills"> Restful APIs</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="others_div">
+                    <ul>
+                      <li>
+                        <div className="react-icons-div">
+                          <BsGit /> <span className="color-skills">Git</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <BsGithub />
+                          <span className="color-skills">Github</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <TbBrandVscode />
+                          <span className="color-skills"> VS Code</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <BsTrello />
+                          <span className="color-skills"> Trello</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <CgFigma />{" "}
+                          <span className="color-skills">Figma</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <SiMiro />{" "}
+                          <span className="color-skills"> Miro.com</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="react-icons-div">
+                          <img src={agile} alt="" className="img-agile" />{" "}
+                          <span className="color-skills"> Agile Methodology</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="footer_open-div">
+                <img src={footer} alt="" />
               </div>
             </motion.div>
           )}
